@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="loader">
+        Работай
+     </div>
+     
+     <section class="main">
+         <h1>Мобільні телефони</h1>
+         <% for(let i = 0; i < items.length; ++i) { %>
+            <p>
+             <li><a href = "/<%=items[i].id %>"> <%= items[i].Model %> </a>
+             </li>
+             
+            </p>
+        <% } %>
+     </section>
+     <div class="output"></div>
+     <script src="./main.js"></script>
+</body>
+</html>
